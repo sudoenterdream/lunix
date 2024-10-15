@@ -9,25 +9,40 @@
 
   # Define the packages to be installed in the user's environment
   home.packages = with pkgs; [
+
+    # env & cli
+    hyprpaper
+    waybar
+    oh-my-fish
+    glow
+    kitty
+
+    # general
+    firefox
+
+    # util
+    neofetch
+    hyprshot
+
+    # code commons
+    vscode
+    tree
+    neovim
+
+    python3
+    nodejs
+
+    # hardware engineering tools
     verilog
     yosys
     gtkwave
+
+    # appdev
     android-studio
     flutter
-    python3
-    glow
-    nodejs
+
+    # misc
     ani-cli
-    oh-my-fish
-    vscode
-    kitty
-    firefox
-    tree
-    hyprpaper
-    waybar
-    neovim
-    neofetch
-    hyprshot
   ];
 
   # Enable and configure shell programs
@@ -45,5 +60,7 @@ home.file = {
   preload = /home/dream/Downloads/brightday.jpg
   wallpaper = , /home/dream/Downloads/brightday.jpg
   '';
+
+  ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyprland.conf;
 };
 }
