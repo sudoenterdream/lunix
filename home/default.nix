@@ -56,11 +56,31 @@
   programs.home-manager.enable = true;
 
 home.file = {
-  ".config/hypr/hyprpaper.conf".text = ''
-  preload = /home/dream/Downloads/brightday.jpg
-  wallpaper = , /home/dream/Downloads/brightday.jpg
-  '';
 
-  ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyprland.conf;
+  # hyprland and hyprpaper
+  ".config/hypr" = {
+    source = ./dotfiles/hypr;
+    recursive = true;
+  };
+
+  ".config/waybar" = {
+    source = ./dotfiles/waybar;
+    recursive = true;
+  };
+
+  ".config/nvim" = {
+    source = ./dotfiles/nvim;
+    recursive = true;
+  };
+
+    ".config/kitty" = {
+    source = ./dotfiles/kitty;
+    recursive = true;
+  };
+
+    ".config/fish" = {
+    source = ./dotfiles/fish;
+    recursive = true;
+  };
 };
 }

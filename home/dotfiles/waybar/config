@@ -1,0 +1,44 @@
+{
+  "layer": "top",
+  "position": "left",
+  "orientation": "vertical",
+  "modules-left": ["sway/workspaces", "sway/mode", "top-clock"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "network", "pulseaudio", "battery", "tray", "custom/weather"],
+  "tray": {
+    "icon_size": 20,
+    "spacing": 10
+  },
+  "sway/mode": {
+    "format": "Mode: {mode}",
+    "format-alt": "Mod: {mode}",
+    "format-alt-click": "1"
+  },
+  "clock": {
+    "format": "{:%B %d, %Y}",
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "interval": 1,
+    "rotate": 90
+  },
+  "cpu": {
+    "format": "\n{usage}%",
+    "tooltip": true,
+    "interval": 5
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "interval": 10
+  },
+  "pulseaudio": {
+    "format": "\n{volume}%",
+    "on-click": "pavucontrol"
+  },
+  "battery": {
+    "format": "\n{capacity}%",
+    "format-charging": "\n{capacity}%",
+    "tooltip": true,
+    "interval": 15
+  }
+}
