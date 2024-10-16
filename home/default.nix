@@ -31,7 +31,7 @@
 
     python3
     nodejs
-    mongodb
+    #mongodb
 
     # hardware engineering tools
     verilog

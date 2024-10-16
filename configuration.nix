@@ -25,6 +25,10 @@
     efi.canTouchEfiVariables = true;
   };
 
+  #tmpfs
+  boot.tmpOnTmpfs = true;
+  boot.tmpOnTmpfsSize = "14G";
+
   # Perform garbage collection weekly to maintain low disk usage
   nix.gc = {
     automatic = true;
