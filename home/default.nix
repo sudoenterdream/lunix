@@ -31,7 +31,6 @@
 
     python3
     nodejs
-    #mongodb
 
     # hardware engineering tools
     verilog
@@ -63,7 +62,6 @@ home.file = {
     source = ./dotfiles/hypr;
     recursive = true;
   };
-
   ".config/waybar" = {
     source = ./dotfiles/waybar;
     recursive = true;

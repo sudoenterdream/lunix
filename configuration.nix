@@ -40,6 +40,10 @@
   networking = {
     hostName = "lunix";
     networkmanager.enable = true;
+    firewall = {
+	enable = true;
+	allowedTCPPorts = [3000];
+    };
   };
 
   # Localization
@@ -58,6 +62,12 @@
     iptables
     wl-clipboard
     lxqt.lxqt-policykit
+
+    gcc
+    pkg-config
+    openssl
+    openssl.dev
+    cmake    
   ];
 
   # Fonts
@@ -70,9 +80,15 @@
     fontDir.enable = true;
   };
 
+  virtualisation = {
+	docker.enable = true;
+  };
+
   # Services
   services = {
-    xserver.enable = true;
+    xserver = {
+      enable = true;
+      };
     pipewire = {
       enable = true;
       pulse.enable = true;

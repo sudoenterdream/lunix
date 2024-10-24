@@ -42,4 +42,3 @@ in
    # package = unstablePkgs.nvidia_x11;
   };
 }
-
