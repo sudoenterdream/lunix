@@ -28,6 +28,7 @@
     vscode
     tree
     neovim
+    ngrok
 
     python3
     nodejs
@@ -43,6 +44,8 @@
 
     # misc
     ani-cli
+    minecraft
+    #steam
   ];
 
   # Enable and configure shell programs
