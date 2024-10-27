@@ -91,6 +91,11 @@
   services = {
     xserver = {
       enable = true;
+      displayManager.lightdm = {
+        enable = true;
+        greeters.slick.enable = true;
+
+      };
       };
     pipewire = {
       enable = true;
@@ -101,6 +106,7 @@
       enable = true;
       enableUserService = true;
     };
+    flatpak.enable = true;
   };
 
   #Security

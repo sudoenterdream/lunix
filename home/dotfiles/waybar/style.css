@@ -2,33 +2,60 @@
   font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 12px;
   padding: 0 2px;
+  color: #ffffff; /* Evangelion blue-green accent */
+  background-color: #000000;
 }
 
 #clock {
   font-weight: bold;
+  color: #ffffff; /* Evangelion orange accent */
 }
 
 #battery {
-  color: #000000;
+  color: #ffffff; /* Bright yellow for visibility */
   margin-bottom: 10px;
 }
 
 #network {
-  color: #000000;
+  color: #ffffff; /* Bright magenta for a cyber aesthetic */
   margin-bottom: 10px;
 }
 
-#cpu{
+#cpu {
+  color: #ffffff; /* Neon green to match EVA unit interfaces */
   margin-bottom: 10px;
 }
 
-#pulseaudio{
+#pulseaudio {
+  color: #a0e9ff; /* Soft neon blue for audio indicator */
   margin-bottom: 10px;
 }
 
 #tray {
-  border: 1px solid #333;
-  background-color: #222;
+  border: 1px solid #3a3a3a; /* Subtle but sharp border */
+  background-color: #1a1a1a; /* Dark background to match EVA interiors */
   border-radius: 5px;
   padding: 5px;
+  color: #ffffff;
+}
+
+/* Adding EVA-style background */
+body {
+  background-color: #111; /* Deep dark background */
+}
+
+/* Custom hover effects for added interactivity */
+#clock:hover,
+#battery:hover,
+#network:hover,
+#cpu:hover,
+#pulseaudio:hover {
+  color: #000000; /* Highlight on hover */
+  background-color: #444; /* Darker highlight background */
+  border-radius: 4px;
+}
+
+/* Adding bold and minimalistic icons */
+.icon {
+  color: #ffffff; /* Magenta for an Evangelion feel */
 }
