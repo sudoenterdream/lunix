@@ -14,7 +14,10 @@
     settings.auto-optimise-store = true;
   };
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+  	allowUnfree = true;
+	allowBroken = true;
+	};
   system.stateVersion = "24.05";
 
   # Bootloader configuration
