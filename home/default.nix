@@ -18,7 +18,8 @@
     kitty
 
     # general
-    firefox
+    #firefox
+    brave
 
     # util
     neofetch
