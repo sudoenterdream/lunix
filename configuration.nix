@@ -29,8 +29,10 @@
   };
 
   #tmpfs
-  boot.tmpOnTmpfs = true;
-  boot.tmpOnTmpfsSize = "14G";
+  boot.tmp = {
+      useTmpfs = true;
+      tmpfsSize = "14G";
+  };
 
   # Perform garbage collection weekly to maintain low disk usage
   nix.gc = {
