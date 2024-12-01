@@ -27,6 +27,7 @@
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
 					home-manager.users.dream = import ./home/default.nix;
+					home-manager.backupFileExtension = "backup";
 				}
 			];
 		};

@@ -34,6 +34,8 @@
       tmpfsSize = "14G";
   };
 
+  boot.kernelModules = [ "kvm-amd" ];
+
   # Perform garbage collection weekly to maintain low disk usage
   nix.gc = {
     automatic = true;
@@ -87,6 +89,7 @@
 
   virtualisation = {
 	docker.enable = true;
+	libvirtd.enable = true;
   };
 
   # Services
@@ -120,6 +123,7 @@
   programs = {
     hyprland.enable = true;
     thunar.enable = true;
+    adb.enable = true;
   };
 
 }

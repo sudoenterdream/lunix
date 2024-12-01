@@ -19,18 +19,23 @@
 
     # general
     firefox
-    brave
 
     # util
     neofetch
     hyprshot
+    git-lfs
+    qemu
 
     # code commons
     vscode
     tree
     neovim
 
-    python3
+
+    simple-mtpfs
+    libmtp
+
+    python311
     nodejs
 
     # hardware engineering tools
@@ -39,11 +44,14 @@
     gtkwave
 
     # appdev
-    android-studio
-    flutter
 
     # misc
     ani-cli
+
+    #rust
+    rustc
+    rustup
+    #dioxus-cli
   ];
 
   # Enable and configure shell programs
@@ -54,7 +62,10 @@
     enable = true;
   };
 
-  programs.home-manager.enable = true;
+  programs.home-manager = {
+    enable = true;
+    };
+  
 
 home.file = {
 
